@@ -9,7 +9,7 @@ package com.lkcoffee;
 import java.time.LocalDateTime;
 
 public class OrderDeliveryService {
-    public final static Database DATABASE = Database.getInstance();
+    public static final  Database DATABASE = Database.getInstance();
 
 
     public void simulateOrderDelivery(String orderId, String riderId) {
@@ -30,10 +30,12 @@ public class OrderDeliveryService {
             System.out.println("Rider is not healthy.");
             return;
         }
-        if (order.getRiderId()!=null&&order.getRiderId()!=riderId){
+        if (order.getRiderId()!=null&&!order.getRiderId().equals(riderId)){
             System.out.println("The order has been accepted by someone else");
             return;
         }
+
+
         if (order.getStatus() == OrderStatus.WAITING_FOR_PICKUP && rider.canTakeOrder()) {
             rider.takeOrder(order);
             order.setRiderId(rider.getRiderId());

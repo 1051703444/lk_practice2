@@ -1,0 +1,13 @@
+
+W
+java:S4973!"<Strings and Boxed types should be compared using "equals()".(¿ØÖıÿÿÿÿ
+[
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ö€—°
+@	java:S106"+Replace this use of System.out by a logger.(ıÛ´ê
+E	java:S106"+Replace this use of System.out by a logger.(ÛÈõêúÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ƒóâ‹ûÿÿÿÿ
+@	java:S106""+Replace this use of System.out by a logger.(ßÙ€°
+E	java:S106*"+Replace this use of System.out by a logger.(­ı—³ùÿÿÿÿ
+E	java:S1060"+Replace this use of System.out by a logger.(ƒš‡üÿÿÿÿ
+E	java:S1063"+Replace this use of System.out by a logger.(Ï½Õæùÿÿÿÿ
+E	java:S1066"+Replace this use of System.out by a logger.(ÆŒªúüÿÿÿÿ

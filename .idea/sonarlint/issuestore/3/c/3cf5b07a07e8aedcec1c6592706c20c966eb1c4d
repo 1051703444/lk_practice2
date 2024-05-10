@@ -1,0 +1,8 @@
+
+[
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ö€—°
+U
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(õŠX
+?	java:S106"+Replace this use of System.out by a logger.(õŠX
+S
+java:S1128"8Remove this unused import 'java.util.function.Consumer'.(Ì†ƒÔùÿÿÿÿ
