@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-// 测试代码
+
 public class PracticeTest {
     static Database database = Database.getInstance();
 
