@@ -8,7 +8,7 @@ import java.util.function.Consumer;
  * @version V1.0
  * @Description
  * @Package com.lkcoffee
- * @date 2024/5/10 16:15
+ * @date 2024/5/10
  */
 public class OrderListQuery {
     public  final static Database DATABASE = Database.getInstance();

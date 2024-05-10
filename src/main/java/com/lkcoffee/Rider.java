@@ -4,7 +4,7 @@ package com.lkcoffee;
  * @author 陈志雄
  * @version V1.0
  * @Package PACKAGE_NAME
- * @date 2024/5/10 15:13
+ * @date 2024/5/10
  */
 import lombok.Builder;
 import lombok.Data;
@@ -15,7 +15,9 @@ import java.util.Optional;
 public class Rider {
     private String riderId;
     private boolean isWorking;
+    private boolean isHealthy;
     private List<Order> orders;
+
 
     public void startWork() {
         isWorking = true;

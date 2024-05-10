@@ -35,4 +35,9 @@ public class Database {
         return database;
     }
 
+    public void clearMaps(){
+        database.ordersDB.clear();
+        database.ridersDB.clear();
+    }
+
 }

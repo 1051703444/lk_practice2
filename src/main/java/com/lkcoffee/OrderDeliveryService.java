@@ -4,7 +4,7 @@ package com.lkcoffee;
  * @author 陈志雄
  * @version V1.0
  * @Package PACKAGE_NAME
- * @date 2024/5/10 15:13
+ * @date 2024/5/10
  */
 import java.time.LocalDateTime;
 
@@ -26,8 +26,17 @@ public class OrderDeliveryService {
             return;
         }
 
+        if(!rider.isHealthy()){
+            System.out.println("Rider is not healthy.");
+            return;
+        }
+        if (order.getRiderId()!=null&&order.getRiderId()!=riderId){
+            System.out.println("The order has been accepted by someone else");
+            return;
+        }
         if (order.getStatus() == OrderStatus.WAITING_FOR_PICKUP && rider.canTakeOrder()) {
             rider.takeOrder(order);
+            order.setRiderId(rider.getRiderId());
             System.out.println("Rider " + riderId + " took order " + orderId);
         } else if (order.getStatus() == OrderStatus.ON_THE_WAY) {
             // 检查是否超时

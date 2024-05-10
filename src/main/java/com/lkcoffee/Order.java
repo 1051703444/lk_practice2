@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
  * @author 陈志雄
  * @version V1.0
  * @Package PACKAGE_NAME
- * @date 2024/5/10 15:13
+ * @date 2024/5/10
  */
 @Data
 @Builder
@@ -19,4 +19,5 @@ public class Order {
     private String customer;
     private OrderStatus status;
     private LocalDateTime createdAt;
+    private String riderId;
 }
