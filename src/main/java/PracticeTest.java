@@ -6,14 +6,6 @@ import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
-// 订单状态枚举
-enum OrderStatus {
-    WAITING_FOR_PICKUP, // 待接单
-    ON_THE_WAY,         // 配送中
-    DELIVERED,          // 配送完成
-    EXPIRED            // 超时
-}
-
 // 测试代码
 public class PracticeTest {
     @Test
