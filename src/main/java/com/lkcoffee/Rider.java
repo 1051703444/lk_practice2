@@ -1,10 +1,15 @@
+package com.lkcoffee;
+/**
+ * @Description  骑手类
+ * @author 陈志雄
+ * @version V1.0
+ * @Package PACKAGE_NAME
+ * @date 2024/5/10 15:13
+ */
 import lombok.Builder;
 import lombok.Data;
-
 import java.util.List;
 import java.util.Optional;
-
-// 骑手类
 @Data
 @Builder
 public class Rider {

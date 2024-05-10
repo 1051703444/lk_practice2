@@ -1,12 +1,20 @@
+package com.lkcoffee;
+/**
+ * @Description 订单流转逻辑类
+ * @author 陈志雄
+ * @version V1.0
+ * @Package PACKAGE_NAME
+ * @date 2024/5/10 15:13
+ */
 import java.time.LocalDateTime;
 
-// 订单流转逻辑类
 public class OrderDeliveryService {
-    public Database database = new Database();
+    public final static Database DATABASE = Database.getInstance();
+
 
     public void simulateOrderDelivery(String orderId, String riderId) {
-        Order order = database.getOrder(orderId);
-        Rider rider = database.getRider(riderId);
+        Order order = DATABASE.getOrder(orderId);
+        Rider rider = DATABASE.getRider(riderId);
 
         if (order == null || rider == null) {
             System.out.println("Order or Rider not found.");
@@ -34,13 +42,5 @@ public class OrderDeliveryService {
         } else {
             System.out.println("Order is not in a valid status for delivery.");
         }
-    }
-
-    public Database getDatabase() {
-        return database;
-    }
-
-    public void setDatabase(Database database) {
-        this.database = database;
     }
 }
